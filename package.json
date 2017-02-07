@@ -1,0 +1,23 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "Recipe Finder is a project that demonstrates the utilization of API queries with data visualization. In this case the API requests information from the developer Edamam.com endpoint, selected by a user generated search, diet preference, and health preference. The request returns a data object, which is then parsed and displayed in a table for the user to view with links to each recipe. You can try the demo [here](https://navkelley.github.io/recipeFinder/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navkelley/recipeFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navkelley/recipeFinder/issues"
+  },
+  "homepage": "https://github.com/navkelley/recipeFinder#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+}

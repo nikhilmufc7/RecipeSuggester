@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--script and links-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="JS/recipe.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/2a2d6cf748.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--title for tab-->
+    <title>Get Your Recipe</title>
+  </head>
+  <body id="searchScreen">
+    <!--form of ingredients to input-->
+    <section id="ingredientSection">
+      <div id="home" class="container col-sm-1">
+      <a href="index.html"><i id="homeButton" class="fa fa-2x fa-home" aria-hidden="true"></i></a>
+      </div>
+      <div class="container">
+        <header id="ingredientTitle">
+          <p id="userInstructions">You got ingridients but you are stuck in a dilemma of what to make out of it? Don't worry we got you covered, just enter the ingriedents and we will present you the recipes for some of the best dishes you can make out of those. </p>
+        </header>
+        <form id="ingredientForm" class="form-horizontal">
+          <!--user input fields-->
+          <div class="form-group">
+            <label for="ingredientInput" class="col-sm-2 control-label">Ingredient:</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="ingredientInput" name="addIngredient" placeholder="Chicken, beef, fish, quinoa, bok choy, etc.">
+            </div><!--column-->
+            <button id="addIngred" class="col-sm-2 btn btn-info" type="submit">Add Ingredient</button>
+          </div><!--form-group input-->
+        </form><!--ingredient form-->
+        <form id="searchForm" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-6">
+              <!--dropdown options for diet-->
+              <div class="dropdown">
+                <label for="diet">Diet Filter:</label><br>
+                <select id="diet" name="diet">
+                  <option value="low-carb">Low-Carb</option>
+                  <option value="high-protein">High-Protein</option>
+                  <option value="low-fat">Low-Fat</option>
+                  <option value="low-sodium">Low-Sodium</option>
+                  <option value="balanced">Balanced</option>
+                  <option value="high-fiber">High-Fiber</option>
+                </select>
+              </div><!--dropdown-diet-->
+              <!--dropdown options for health-->
+              <div class="dropdown">
+                <label for="health">Health Filter:</label><br>
+                <select id="health" name="health">
+                  <option value="gluten-free">Gluten-free</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="dairy-free">Dairy-free</option>
+                  <option value="peanut-free">Peanut-free</option>
+                  <option value="low-sugar">No-sugar</option>
+                  <option value="sugar-conscious">Sugar-conscious</option>
+                  <option value="paleo">Paleo</option>
+                  <option value="wheat-free">Wheat-free</option>
+                  <option value="egg-free">Egg-Free</option>
+                  <option value="soy-free">Soy-free</option>
+                  <option value="tree-nut-free">Tree Nuts Excluded</option>
+                  <option value="low-potassium">Low-potassium</option>
+                  <option value="alcohol-free">Alcohol-free</option>
+                  <option value="No-oil-added">No oil added</option>
+                  <option value="kidney-friendly">Kidney-friendly</option>
+                </select>
+              </div><!--dropdown-health-->
+              <!--search button & restart-->
+              <button id="search" type="submit" class="btn btn-info">Let's Make It!</button>
+              <button id="restart" type="button" class="btn btn-info">Restart</button>
+            </div><!--dropdowns & buttons column-->
+            <!--user input list-->
+            <div id="userIngredients" class="col-sm-4">
+              <h5>Ingredients I have:</h5>
+                <ul id="list"></ul>
+            </div><!--userIngredients column-->
+          </div><!--form group search form-->
+        </form><!--search Form-->
+      </div><!--container-->
+    </section><!--ingredients Section-->
+    <section id="results">
+      <table id="resultsTable" class="table table-responsive table-bordered">
+        <tr>
+          <th>Recipe Title</th>
+          <th>Ingredients Needed</th>
+          <th>Calories</th>
+          <th>Diet Filters</th>
+          <th>Health Filters</th>
+        </tr><!--table row-->
+      </table><!--results table--> 
+      <!--attribute to edamam api-->
+      <div id="edamam"></div>
+    </section><!--results section-->
+  </body>
+  <footer>
+    <div id="developer" class="container">
+      <address>Built and designed by Nicole Kelley</address>
+      <div class="developerLinks">
+        <a href="https://github.com/nikhilmufc7"><i class="fa fa-2x fa-github link" aria-hidden="true"></i></a>
+        <a href="https://in.linkedin.com/in/nikhil-singh7"><i class="fa fa-2x fa-linkedin link" aria-hidden="true"></i></a>
+        <a href="https://facebook.com/officialNikhilSingh"><i class="fa fa-2x fa-facebook link" aria-hidden="true"></i></a>
+      </div><!--developerLinks-->
+    </div><!--developer-->
+  </footer>
+</html>
