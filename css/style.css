@@ -1,1 +1,109 @@
+h1, p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center; 
+}
 
+#startButton, #restart, #search, #addIngred, #resultsTable, #ingredientForm, #searchForm, #list, h5, #developer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 90px; 
+}
+
+p {
+	font-size: 22px;
+  padding-top: 100px;  
+}
+
+#search, #restart {
+  margin-top: 10px;
+}
+
+#diet {
+  margin-bottom: 5px;
+}
+
+th {
+  background-color: maroon; 
+}
+
+#main, #searchScreen { 
+  background-repeat: no-repeat;  
+  background-size: cover;
+}
+
+#main {
+  background-image: url("../images/spoons.jpg");
+}
+
+#searchScreen {
+  background-image: url("../images/fish.jpg");   
+}
+
+#intro, #ingredientTitle, th, label, address {
+  color: white;
+  text-shadow: 2px 2px black; 
+}
+
+#startScreen {
+  padding: 200px; 
+}
+
+#developer {
+  padding: 150px;
+}
+
+#startButton {
+  position: relative;
+  left: 43%;
+  right: 57%;
+}
+
+#resultsTable {
+  background-color: silver;
+  font-size: 16px;  
+}
+
+#ingredientForm, #searchForm, #list, h5 {
+  font-size: 20px;
+}
+
+#userIngredients {
+  background-color: rgba(12, 4, 4, 0.2); 
+  color: white;
+}
+
+.dropdown, #search {
+  margin-left: 62px;
+}
+
+#home {
+  float: right;
+}
+
+#homeButton {
+  padding-left: 80px; 
+  padding-top: 15px;
+}
+
+.developerLinks {
+  padding: 10px;
+  margin-left: 350px;   
+}
+
+address {
+  margin-bottom: 2px; 
+  text-align: center; 
+}
+
+.link {
+  display: inline-block;
+  padding-left: 15px; 
+  text-shadow: 2px 2px black;
+}
+
+#edamam {
+  text-align: center; 
+}
